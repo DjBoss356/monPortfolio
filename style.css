@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.logo{
+    position: relative;
+    font-family:'Rowdies';
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+body{
+    background: rgb(238,174,202);
+    background: -moz-linear-gradient(0deg, rgba(238,174,202,0) 0%, rgba(148,187,233,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(238,174,202,0) 0%, rgba(148,187,233,1) 100%);
+    background: linear-gradient(0deg, rgba(238,174,202,0) 0%, rgba(148,187,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1); 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    width: 100%;
+    height: 5vh;
+    background: white;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a{ 
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond';
+    align-content: space-between;
+    display:inline;
+    text-decoration: none;
+    margin-left: 19px;
+    color: black;
+    
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: blueviolet;
+    transition: 0.6s;
+}
+
+.home-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+}
+
+
+.home{
+    padding-top: 45px;
+    height: 100vh;
+}
+
+.text1{
+    font-family: 'DM Serif Text', serif;
+    font-size: 600%;
+    font-weight:500;
+    position: relative;
+    align-content: space-between;
+    animation: typing 1.5s ;
+    letter-spacing: 1px;
+    background: transparent;
+    color: white;
+    
+}
+.container{
+    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+@keyframes typing{
+    0%{
+        color: rgb(255, 255, 255);
+        opacity: 0;
+        font-size: 0%;
+        height: 100%;
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        font-size: 620%;
+    }
+}
+
+
+
+
+.subtext{
+    position:relative;
+    font-size:14px;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond';
+    padding-top: 20px;
+    margin: 2px;
+}
+section{
+    min-height: 100vh;
+    min-width: 100%;
+    display:flex ;
+    justify-content: center;
+}
+
+section:nth-child(odd){
+    background: red;
+}
